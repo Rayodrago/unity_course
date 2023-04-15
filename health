@@ -1,0 +1,25 @@
+Using System.Collection;
+Using System.Collection.Generic;
+Using UnityEngine;
+Using UnityEngine.SceneManagemnt;
+Public classe Health : Monoehaviour
+{
+public int currenthealth = 1;
+public int maxHealth = 10;
+public AudSource audiSource;
+public AudioClip domageSoud;
+public voi TakeDmage(int domageà
+{
+currenthealth -= domage; 
+if (currenthealth > 0)
+{
+audioSurce.PlayOneShot(damageSound)
+}
+else
+{
+int sceneIndex = SceneManger.GetActiveScene().builIndex;
+ScneManager. LoadScene(seneIndex);
+       }
+     }
+   }
+    
